@@ -5,3 +5,6 @@
   (:export :get-days-puzzle-input
 		   :submit-days-answer))
 
+
+(defpackage #:day-01
+  (:use #:cl #:arrows #:advent-of-code-2020 #:cl-ppcre))
