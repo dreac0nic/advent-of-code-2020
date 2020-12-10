@@ -67,4 +67,4 @@
 
 ;; Solution
 ;; (validate-passwords *puzzle-input*)
-;; (submit-days-answer 2 (validate-passwords *puzzle-input*) 'part-two)
+;; (submit-days-answer 2 (validate-passwords *puzzle-input*) :part-two)

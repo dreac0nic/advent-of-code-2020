@@ -40,7 +40,7 @@
 
 
 (defun submit-days-answer (day-number answer &optional part)
-  "Submits the given answer for the day specified. Optionally PART-ONE and PART-TWO can be specified."
+  "Submits the given answer for the day specified. Optionally :part-one and :part-two can be specified."
   (elt (lquery:$ (initialize (dexador:post (format nil "~a/day/~a/answer" (base-endpoint) day-number)
 										   :cookie-jar (let ((cookies (make-cookie-jar)))
 														 (-<>> (or (sb-ext:posix-getenv "AOC_SESSION")
@@ -55,8 +55,8 @@
 															   (merge-cookies cookies))
 														 cookies)
 										   :content `(("level" . ,(format nil "~a" (cond
-																					 ((eq part 'part-one) 1)
-																					 ((eq part 'part-two) 2)
+																					 ((eq part :part-one) 1)
+																					 ((eq part :part-two) 2)
 																					 ('t 1))))
 													  ("answer" . ,(format nil "~a" answer)))))
 		 "body main article p"

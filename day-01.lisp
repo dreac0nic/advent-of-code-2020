@@ -66,4 +66,4 @@
 
 ;; Solution
 ;; (find-triple-expense-entries *puzzle-input*)
-;; (submit-days-answer 1 (find-triple-expense-entries *puzzle-input*) 'PART-TWO)
+;; (submit-days-answer 1 (find-triple-expense-entries *puzzle-input*) :part-one)
