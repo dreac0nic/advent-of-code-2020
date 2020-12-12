@@ -10,4 +10,5 @@
   :components ((:file "package")
                (:file "advent-of-code-2020")
 			   (:file "day-01")
-			   (:file "day-02")))
+			   (:file "day-02")
+			   (:file "day-03")))
