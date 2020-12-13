@@ -16,3 +16,7 @@
 
 (defpackage #:day-03
   (:use #:cl #:arrows #:advent-of-code-2020 #:cl-ppcre))
+
+
+(defpackage #:day-04
+  (:use #:cl #:arrows #:advent-of-code-2020 #:cl-ppcre))
